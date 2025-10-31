@@ -117,7 +117,7 @@ elif page == "专业数据分析":
     st.markdown('***')
     st.subheader('1.各专业男女性别比例')
     pd.set_option('display.unicode.east_asian_width', True)
-    data = pd.read_csv("D:/streamlit_env/test/student_data_adjusted_rounded.csv",encoding='utf-8')
+    data = pd.read_csv("student_data_adjusted_rounded.csv",encoding='utf-8')
     d1, d2 = st.columns([2,1])
     with d1:
         gender_fig = px.histogram(df, x="专业", color="性别", barmode="group",
